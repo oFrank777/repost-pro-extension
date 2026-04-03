@@ -1,0 +1,39 @@
+{
+  "name": "tiktok-repost-pro",
+  "displayName": "TikTok Repost PRO",
+  "version": "1.0.0",
+  "description": "Herramienta SaaS de productividad para gestionar reposts en TikTok con validación Enterprise.",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build && node scripts/obfuscate.js",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "@plasmohq/storage": "^1.10.0",
+    "@supabase/supabase-js": "^2.39.0",
+    "plasmo": "^0.90.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@plasmohq/prettier-plugin-sort-imports": "latest",
+    "@types/chrome": "0.0.260",
+    "@types/node": "20.11.24",
+    "@types/react": "18.2.61",
+    "@types/react-dom": "18.2.19",
+    "javascript-obfuscator": "^5.4.1",
+    "prettier": "3.2.5",
+    "typescript": "5.3.3"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*.tiktok.com/*",
+      "https://*.supabase.co/*"
+    ],
+    "permissions": [
+      "storage",
+      "notifications",
+      "sidePanel"
+    ]
+  }
+}
