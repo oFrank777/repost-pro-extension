@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const JavaScriptObfuscator = require('javascript-obfuscator');
 
-const DIRECTORY = path.join(__dirname, '../build/chrome-mv3');
+const DIRECTORY = path.join(__dirname, '../build/chrome-mv3-prod');
 
 function obfuscateDirectory(directory) {
   if (!fs.existsSync(directory)) {

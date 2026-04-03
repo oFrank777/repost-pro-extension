@@ -18,7 +18,7 @@ const getSupabase = () => {
 const supabase = getSupabase()
 
 const SUPPORT_EMAIL = "theultimate_warrior2015@outlook.com"
-const DEFAULT_LANDING = "https://repost-pro-enterprise.vercel.app"
+const DEFAULT_LANDING = process.env.PLASMO_PUBLIC_LANDING_URL || "https://repost-pro-landing.vercel.app"
 
 const getBrowserFingerprint = async () => {
   const canvas = document.createElement('canvas');
